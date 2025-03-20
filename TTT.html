@@ -1,13 +1,44 @@
+    <!-- 
+    Specifies the document type as HTML5 
+     -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  
+    <!-- 
+    Sets the character encoding to UTF-8 for proper text rendering 
+    -->
     <meta charset="UTF-8">
+    
+    <!--
+    Ensures the page is responsive and scales properly on different devices 
+    -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <!-- 
+    Sets the title of the webpage that appears in the browser tab 
+    -->
     <title>Tic Tac Toe</title>
+
+    <!-- 
+    Links the external CSS file (TTT.css) to style the page 
+    -->
     <link rel="stylesheet" href="TTT.css">
+
+
 </head>
 <body>
+
+    <!-- 
+    Main container for the Tic Tac Toe board 
+    -->
     <div class="board" id="board">
+        
+        <!-- 
+        Each div represents a cell in the Tic Tac Toe grid 
+        Each cell has a "data-index" attribute to identify its position in the grid
+        -->
         <div class="cell" data-index="0"></div>
         <div class="cell" data-index="1"></div>
         <div class="cell" data-index="2"></div>
@@ -17,7 +48,13 @@
         <div class="cell" data-index="6"></div>
         <div class="cell" data-index="7"></div>
         <div class="cell" data-index="8"></div>
+   
     </div>
+
+    <!-- 
+    Links the external JavaScript file (TTT.js) to add interactivity to the game 
+    -->
     <script src="TTT.js"></script>
+
 </body>
 </html>
