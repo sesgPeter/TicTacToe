@@ -1,31 +1,46 @@
+/* 
+Styles for the body element 
+This centers the Tic Tac Toe board both vertically and horizontally on the page 
+*/
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
+    display: flex; /* Enables flexbox layout */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    height: 100vh; /* Sets the height of the body to fill the entire viewport */
+    background-color: #f0f0f0; /* Light gray background color */
+    font-family: Arial, sans-serif; /* Sets the font for the entire page */
 }
 
+/* 
+Styles for the Tic Tac Toe board container 
+This creates a 3x3 grid layout for the game cells 
+*/
 .board {
-    display: grid;
-    grid-template-columns: repeat(3, 100px);
-    grid-template-rows: repeat(3, 100px);
-    gap: 5px;
+    display: grid; /* Enables grid layout */
+    grid-template-columns: repeat(3, 100px); /* Creates 3 columns, each 100px wide */
+    grid-template-rows: repeat(3, 100px); /* Creates 3 rows, each 100px tall */
+    gap: 5px; /* Adds 5px spacing between the cells */
 }
 
+/* 
+Styles for each cell in the Tic Tac Toe grid 
+*/
 .cell {
-    width: 100px;
-    height: 100px;
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2em;
-    cursor: pointer;
-    border: 1px solid #000000;
+    width: 100px; /* Sets the width of each cell */
+    height: 100px; /* Sets the height of each cell */
+    background-color: #fff; /* White background color for the cells */
+    display: flex; /* Enables flexbox layout for centering content */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    font-size: 2em; /* Sets the font size for the player's symbol (X or O) */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over a cell */
+    border: 1px solid #000000; /* Adds a black border around each cell */
 }
 
+/* 
+Hover effect for the cells 
+This changes the background color when the user hovers over a cell 
+*/
 .cell:hover {
-    background-color: #e0e0e0;
+    background-color: #e0e0e0; /* Light gray background color on hover */
 }
